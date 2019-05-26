@@ -11,7 +11,7 @@ if [[ ! -e $theme_dir ]]; then
     fi
 else
     echo "Download 'agnoster-bash' to $theme_dir..."
-    mkdir $theme_dir
+    mkdir -p $theme_dir
 fi
 
 git clone https://github.com/pydemia/agnoster-bash.git $theme_dir

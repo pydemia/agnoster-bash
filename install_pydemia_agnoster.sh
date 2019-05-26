@@ -4,12 +4,15 @@ git clone https://github.com/pydemia/agnoster-bash.git ~/.bash/themes/agnoster-b
 
 
 script_str="
+# ----------------------------------------------------------
 # Theme for bash: agnoster-bash
 export THEME=$HOME/.bash/themes/agnoster-bash/agnoster.bash
 if [[ -f $THEME ]]; then
     export DEFAULT_USER=`whoami`
     source $THEME
 fi
+# ----------------------------------------------------------
+
 "
 # $SHELL, $OSTYPE, $(uname -s)
 shell_name="$(basename $SHELL)"

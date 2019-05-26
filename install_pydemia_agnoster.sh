@@ -30,11 +30,11 @@ fi
 # $SHELL, $OSTYPE, $(uname -s)
 shell_name="$(basename $SHELL)"
 if [[ shell_name == "zsh" ]]; then
-    script_str >> ~/.zshrc
+    script_str >> $HOME/.zshrc
 elif [[ shell_name == "bash" ]]; then
-    script_str >> ~/.bashrc
+    script_str >> $HOME/.bashrc
     if [ shell_name != "root" ] && [ -f "~/.bash_profile" ]; then
-        script_str >> ~/.bash_profile
+        script_str >> $HOME/.bash_profile
     fi
 # elif [[ "$OSTYPE" == "freebsd"* ]]; then
 #    script_str >> ~/.bash_profile

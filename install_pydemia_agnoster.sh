@@ -1,4 +1,21 @@
-mkdir -p ~/.bash/themes/agnoster-bash
+# mkdir -p ~/.bash/themes/agnoster-bash
+theme_dir="~/.bash/themes/agnoster-bash"
+
+echo "Repository: 'https://github.com/pydemia/agnoster-bash'"
+
+if [[ ! -e $theme_dir ]]; then
+    if [[ ! -d $theme_dir ]]; then
+        echo "$dir already exists but is not a directory." 1>&2
+    else
+        echo "$theme_dir already exists."
+    fi
+else
+    echo "Download 'agnoster-bash' to $theme_dir..."
+    mkdir $dir
+fi
+
+
+
 git clone https://github.com/pydemia/agnoster-bash.git ~/.bash/themes/agnoster-bash
 
 

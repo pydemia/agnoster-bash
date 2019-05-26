@@ -33,7 +33,9 @@ elif [[ shell_name == "bash" ]]; then
 # elif [[ "$OSTYPE" == "freebsd"* ]]; then
 #         # ...
 else
-        # Unknown.
+    echo "append this to your shell profile:"
+    echo script_str
+    echo "Done."
 fi
 
 

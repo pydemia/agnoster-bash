@@ -11,19 +11,15 @@ if [[ ! -e $theme_dir ]]; then
     fi
 else
     echo "Download 'agnoster-bash' to $theme_dir..."
-    mkdir $dir
+    mkdir $theme_dir
 fi
 
-
-
-git clone https://github.com/pydemia/agnoster-bash.git ~/.bash/themes/agnoster-bash
-
-
+git clone https://github.com/pydemia/agnoster-bash.git $theme_dir
 
 script_str="
 # ----------------------------------------------------------
 # Theme for bash: agnoster-bash
-export THEME=$HOME/.bash/themes/agnoster-bash/agnoster.bash
+export THEME=$theme_dir/agnoster.bash
 if [[ -f $THEME ]]; then
     export DEFAULT_USER=`whoami`
     source $THEME

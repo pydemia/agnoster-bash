@@ -34,7 +34,7 @@ elif [[ shell_name == "bash" ]]; then
 #         # ...
 else
     echo "append this to your shell profile:"
-    echo script_str
+    echo "$script_str"
     echo "Done."
 fi
 
